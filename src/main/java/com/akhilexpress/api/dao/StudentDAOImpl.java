@@ -39,6 +39,7 @@ public class StudentDAOImpl implements StudentDAO{
 
 	public Student getStudentById(int id) {
 		// TODO Auto-generated method stub
+		
 		return studentList.get(--id);
 	}
 
@@ -59,6 +60,16 @@ public class StudentDAOImpl implements StudentDAO{
 		// TODO Auto-generated method stub
 		studentList.add(student);
 		return student;
+	}
+
+	public Student updateStudent(Student student) {
+		
+				return null;
+	}
+
+	public int findStudentListSize() {
+		// TODO Auto-generated method stub
+		return studentList.size();
 	}
 
 }

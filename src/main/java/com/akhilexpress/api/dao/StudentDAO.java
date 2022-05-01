@@ -8,7 +8,11 @@ public interface StudentDAO {
 
 	List<Student> getAllStudents();
 
-	Student getStudentById(int id);
+	Student getStudentById(int id) ;
 	Student getStudentByName(String name);
 	Student saveStudent(Student student);
+
+	Student updateStudent(Student student);
+	
+	int findStudentListSize();
 }
