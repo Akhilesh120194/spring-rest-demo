@@ -5,7 +5,11 @@ public class Student {
 	private int id;
 	private String name;
 	private String country;
-	private BatchInfo batchInfo;
+	//private BatchInfo batchInfo;
+	
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public Student(int id, String name, String country) {
 		super();
@@ -33,12 +37,19 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public BatchInfo getBatchInfo() {
+	/*public BatchInfo getBatchInfo() {
 		return batchInfo;
 	}
 	public void setBatchInfo(BatchInfo batchInfo) {
 		this.batchInfo = batchInfo;
+	}*/
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", country=" + country + "]";
 	}
+	
+	
 	
 	
 

@@ -42,4 +42,23 @@ public class StudentDAOImpl implements StudentDAO{
 		return studentList.get(--id);
 	}
 
+	public Student getStudentByName(String name) {
+		// TODO Auto-generated method stub
+		Student student=null;
+		for(Student temp:studentList)
+		{
+			if(temp.getName().equals(name))
+			{
+				return temp;
+			}
+		}
+		return null;
+	}
+
+	public Student saveStudent(Student student) {
+		// TODO Auto-generated method stub
+		studentList.add(student);
+		return student;
+	}
+
 }
